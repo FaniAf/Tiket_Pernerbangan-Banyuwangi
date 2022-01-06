@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>absensi hadir</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="auth">
+      <div class="container-md">
+        <h1 class="text-center"><span>TIKET PESAWAT</span> BANDARA BANYUWANGI</h1>
+        <!-- start form -->
+        <div class="card">
+          <div class="card-header">
+            <table class="table table-bordered text-center tabel">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Bandung</th>
+                  <th scope="col">Yogyakarta</th>
+                  <th scope="col">Bali</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Ekonomi</th>
+                  <td>Rp1.000.000,-</td>
+                  <td>Rp500.000,-</td>
+                  <td>Rp800.000,-</td>
+                </tr>
+                <tr>
+                  <th scope="row">VIP</th>
+                  <td>Rp1.500.000,-</td>
+                  <td>Rp1.000.000,-</td>
+                  <td>Rp1.200.000,-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        
+          <div class="card-body">
+            <form action="">
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <p>Kelas</p>
+                </div>
+                <div class="col-4">
+                  <select class="form-select form-select" aria-label=".form-select-sm example" id="InputKelas">
+                    <option >Ekonomi</option>
+                    <option >VIP</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <p>Kota Tujuan</p>
+                </div>
+                <div class="col-4">
+                  <select class="form-select form-select" aria-label=".form-select-sm example" id="InputKota">
+                    <option >Bandung</option>
+                    <option>Yogyakarta</option>
+                    <option>Bali</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <p>Tanggal Berangkat</p>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker'>
+                       <input type='date' class="form-control" />
+                    </div>
+                 </div>
+        
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-4">
+                  <p class="text-dark">* Jika pesanan tiket lebih dari 10, diskon 5%</p>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <p>Jumlah penumpang </p>
+                </div>
+                <div class="col-4">
+                  <input class="form-control form-control " type="number" id="jumlahTiket"/>
+                </div>
+              </div>
+              
+              <div class="row justify-content-center pt-2">
+                
+                <div class="col-2">
+                  <button type="button" class="btn btn-primary" id="buttonHitungTiket"> Hitung Harga Tiket</button>
+                </div>
+              </div>
+              
+
+               <!-- start Total -->
+
+
+               <div class="row justify-content-center pt-4">
+                <div class="col-2 pt-2">
+                  <h6>Harga Asli</h6>
+                </div>
+                <div class="col-4 text-end">
+                  <h5 class="text-success" id="harga"></h5>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <h6>Total Diskon</h6>
+                </div>
+                <div class="col-4 text-end">
+                  <h5 class="text-success" id="discount">-</h5>
+                </div>
+              </div>
+
+<hr>
+
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <h6>Harga Total</h6>
+                </div>
+                <div class="col-4 text-end">
+                  <h5 class="text-success" id="total"></h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <p class="text-danger" id="hasil"></p>
+                </div>
+              </div>
+            </form>
+          </div> 
+         <!-- end form -->
+
+        <!-- star footer -->
+     <div class="card-footer text-muted">
+            <div class="row">
+              <div class="col">
+               <p>© Copyright 2021, All Rights Reserved | Fani Afilla -</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+</div>
+<!-- end footer -->
+
+<script src="script.js"></script>
+  </body>
+</html>
