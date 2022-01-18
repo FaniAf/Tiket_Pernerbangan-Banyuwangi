@@ -77,7 +77,7 @@ function buktipesan() {
 
     <!-- baris 1 -->
 
-    <div class="row justify-content-center tombol">
+    <div class="row justify-content-end tombol">
       <div class="col-3">
           Atas Nama
       </div>
@@ -91,7 +91,7 @@ function buktipesan() {
       </div>
       </div>
 
-    <div class="row justify-content-center tombol">
+    <div class="row justify-content-end tombol">
       <div class="col-3">
           <p>${nama.value}</p> 
       </div>
@@ -109,7 +109,7 @@ function buktipesan() {
 
     <!-- baris 2 -->
 
-    <div class="row justify-content-center tombol">
+    <div class="row justify-content-end tombol">
       <div class="col-3">
           <p>Dari - <br> Banyuwangi</p>
       </div>
@@ -126,7 +126,7 @@ function buktipesan() {
 
     <!--  end baris 2 -->
 
-   <div class="row justify-content-center tombol">
+   <div class="row justify-content-end tombol">
      <div class="col-3">
         <p>Bandara - <br>BLIMBINGSARI</p>
      </div>
