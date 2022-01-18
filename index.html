@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     
-    <script src="bootstrap.min.js"></script>
+    
   </head>
   <body>
     <div class="auth">
       <div class="container-md">
         <h1 class="text-center"><span>TIKET PESAWAT</span> BANDARA BANYUWANGI</h1>
-        <!-- start form -->
+        
+        <!-- start form -->        
         <div class="card">
           <div class="card-header">
             <table class="table table-bordered text-center tabel">
@@ -42,9 +43,22 @@
               </tbody>
             </table>
           </div>
+
+         
         
           <div class="card-body">
             <form action="">
+
+              <div class="row justify-content-center">
+                <div class="col-2 pt-2">
+                  <p>Atas Nama </p>
+                </div>
+                <div class="col-4">
+                  <input class="form-control " type="text" id="nama"/>
+                </div>
+              </div>
+
+
               <div class="row justify-content-center">
                 <div class="col-2 pt-2">
                   <p>Kelas</p>
@@ -56,6 +70,8 @@
                   </select>
                 </div>
               </div>
+
+             
 
               <div class="row justify-content-center">
                 <div class="col-2 pt-2">
@@ -76,10 +92,14 @@
                 </div>
                 <div class="col-4">
                   <div class="form-group">
-                    <div class='input-group date' id='datetimepicker'>
-                       <input type='date' class="form-control" />
+                    <div class='input-group date' >
+                       <input type='date' class="form-control" id='date'/>
                     </div>
                  </div>
+
+                 <div class="col-8">
+                  <p id="warning" class="text-danger fw-bold"></p>
+                </div>
         
                 </div>
               </div>
@@ -96,20 +116,30 @@
                   <p>Jumlah penumpang </p>
                 </div>
                 <div class="col-4">
-                  <input class="form-control form-control " type="number" id="jumlahTiket"/>
+                  <input class="form-control " type="number" id="jumlahTiket"/>
                 </div>
               </div>
               
-              <div class="row justify-content-center pt-2">
+              <div class="row justify-content-center pt-2 tombol">
+
+                <div class="col-2">
+                  <button type="reset" class="btn btn-secondary">Ulangi Lagi</button>
+                </div>
+
+                <div class="col-2">
+                  <button type="button" class="btn btn-primary " id="buttonHitungTiket">Harga Tiket</button>
+                </div>
                 
                 <div class="col-2">
-                  <button type="button" class="btn btn-primary" id="buttonHitungTiket"> Hitung Harga Tiket</button>
+                  <button type="button" class="btn btn-warning" onclick="buktipesan()">Cetak Tiket</button>
                 </div>
-              </div>
-              
+ 
+             </div>  
 
+               
+                  
+                  
                <!-- start Total -->
-
 
                <div class="row justify-content-center pt-4">
                 <div class="col-2 pt-2">
@@ -139,29 +169,29 @@
                   <h5 class="text-success" id="total"></h5>
                 </div>
               </div>
-              <div class="row">
+
+              <div class="row justify-content-center">
+                
                 <div class="col text-center">
-                  <p class="text-danger" id="hasil"></p>
+                  <p class="text-danger text-center" id="hasil"></p>
                 </div>
               </div>
-            </form>
-          </div> 
-         <!-- end form -->
 
-        <!-- star footer -->
-     <div class="card-footer text-muted">
-            <div class="row">
-              <div class="col">
-               <p>© Copyright 2021, All Rights Reserved | Fani Afilla -</p>
-              </div>
-            </div>
-          </div>
+              
+              
+         <!-- end form -->
+          <!-- star footer -->
+        <div class="card-footer text-muted" id="cetak">
+
         </div>
+        <!-- end footer -->
+
+      
        
       </div>
     </div>
 </div>
-<!-- end footer -->
+
 
 <script src="script.js"></script>
   </body>
